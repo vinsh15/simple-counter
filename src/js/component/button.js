@@ -1,24 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export class Button extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			className: "",
-			id: ""
-		};
-	}
+// export class Button extends React.Component {
+// 	constructor(props) {
+// 		super(props);
+// 	}
 
-	render() {
-		return (
-			<button className="btn btn-success" id="btn">
-				STOP!
-			</button>
-		);
-	}
-}
+// 	render() {
+// 		return (
+// 			<button
+// 				className={this.props.type}
+// 				onClick={this.props.function}
+// 				id="btn">
+// 				{this.props.label}
+// 			</button>
+// 		);
+// 	}
+// }
+
+export const Button = props => {
+	return (
+		<button
+			className={this.props.type}
+			onClick={this.props.function}
+			id="btn">
+			{this.props.label}
+		</button>
+	);
+};
 
 Button.PropTypes = {
-	function: PropTypes.string
+	function: PropTypes.function,
+	type: PropTypes.string,
+	label: PropTypes.string
 };

@@ -65,7 +65,7 @@ export class Counter extends React.Component {
 					<h2>Sec</h2>
 					<h2>{Math.floor(this.state.counter % 60)}</h2>
 				</div>
-				<div>
+				<div id="btn">
 					<button
 						className="btn btn-success"
 						onClick={this.startCounter}
@@ -78,13 +78,9 @@ export class Counter extends React.Component {
 						id="buttons">
 						Stop!
 					</button>
-					{/* <Button />
-					<Button /> */}
-				</div>
-				<div id="buttons">
 					<button
 						className="btn btn-warning"
-						id="buttons2"
+						id="buttons"
 						onClick={e => this.setState({ counter: 0 })}>
 						Reset!
 					</button>
