@@ -29,8 +29,8 @@ export const Button = props => {
 	);
 };
 
-Button.PropTypes = {
-	function: PropTypes.function,
+Button.propTypes = {
+	function: PropTypes.func,
 	type: PropTypes.string,
 	label: PropTypes.string
 };

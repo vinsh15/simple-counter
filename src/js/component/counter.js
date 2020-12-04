@@ -84,6 +84,11 @@ export class Counter extends React.Component {
 						onClick={e => this.setState({ counter: 0 })}>
 						Reset!
 					</button>
+					{/* <Button
+						label="AAAAAA"
+						type="btn btn-danger"
+						function={this.stopCounter}
+					/> */}
 				</div>
 			</div>
 		);
